@@ -12,5 +12,5 @@ create table if not exists `ProjectData` (
  `Average_Instructor_Rating` float not null,
  primary key (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=7;
-load data infile '/var/lib/mysql-files/test1.csv' into table ProjectData
+load data local infile 'ExcelFormat.csv' into table ProjectData
 fields terminated by',';
