@@ -1,0 +1,3 @@
+The Following Query should provide the general form we need to pull the desired data from our mySQL database
+
+mysql> select * from ProjectData WHERE Course_Number < 4000 AND Course_Number > 3000 AND Department = "CSCI";
