@@ -12,4 +12,4 @@ create table if not exists `ProjectDataFinal` (
  primary key (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=7;
 load data local infile 'ExcelFormat.csv' into table ProjectDataFinal
-fields terminated by',';
+fields terminated by','; 
