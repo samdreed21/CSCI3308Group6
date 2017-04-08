@@ -1,6 +1,5 @@
-create table if not exists `ProjectData` (
+create table if not exists `ProjectDataFinal` (
  `id` int(1) not null auto_increment,	
- `Term_Year` int(5) not null,
  `Department` varchar(40) not null,
  `Course_Number` int(5) not null,
  `Number_Enrolled` float not null,
@@ -12,5 +11,5 @@ create table if not exists `ProjectData` (
  `Average_Instructor_Rating` float not null,
  primary key (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=7;
-load data local infile 'ExcelFormat.csv' into table ProjectData
+load data local infile 'ExcelFormat.csv' into table ProjectDataFinal
 fields terminated by',';
