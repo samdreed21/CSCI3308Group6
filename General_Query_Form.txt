@@ -1,3 +1,9 @@
-The Following Query should provide the general form we need to pull the desired data from our mySQL database
+The Following Query should provide the general form we need to pull the desired data from our mySQL database. The following expressions, respectively will find all the 1000, 2000, 3000, 4000, and 5000 level courses in the CSCI Department. Simply change department if you want courses from anothe department.
 
-mysql> select * from ProjectData WHERE Course_Number < 4000 AND Course_Number > 3000 AND Department = "CSCI";
+
+mysql> select * from ProjectData WHERE Course_Number regexp '^[1]+'  AND Department = "CSCI";
+mysql> select * from ProjectData WHERE Course_Number regexp '^[2]+'  AND Department = "CSCI";
+mysql> select * from ProjectData WHERE Course_Number regexp '^[3]+'  AND Department = "CSCI";
+mysql> select * from ProjectData WHERE Course_Number regexp '^[4]+'  AND Department = "CSCI";
+mysql> select * from ProjectData WHERE Course_Number regexp '^[5]+'  AND Department = "CSCI";
+
